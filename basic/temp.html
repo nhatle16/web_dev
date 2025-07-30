@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en, Vietnamese">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project AT</title>
+        <style>
+            /* Styling for the introduction text */
+            #introduction-text {
+                background-color: #f0f8ff;
+            }
+            
+            /* Styling for the placeholder text */
+            #placeholder-text {
+                background-color: #f5f5f5;
+            }
+
+            /* Styling for image-audio text */
+            #image-audio-text {
+                background-color:rgb(247, 241, 250)
+            }
+            /* Styling for the form text */
+            #form-text {
+                background-color: #fffeee;
+            }
+
+            /* Styling for the lorem ipsum text */
+            #lorem-ipsum {
+                background-color: rgb(245, 243, 243);
+                border-radius: 15px;
+                color: darkslategrey;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 16px;
+                margin: auto;
+                padding: 10px;
+                width: 80%;
+            }
+
+            /* General style for normal texts */
+            .normal-text {
+                font-size: 18px;
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+
+            /* General styling for paragraphs */
+            p {
+                color: #333;
+                line-height: 2.0;
+                text-align: justify;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            /* General styling for lists */
+            ul, ol {
+                line-height: 2.0;
+            }
+
+            /* General styling for div elements */
+            div {
+                border-radius: 15px;
+                margin: 20px;
+                padding: 10px;
+            }
+
+            /* Styling flexbox for the gallery */
+            .gallery-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            
+            /* Styling for images in the gallery, using descendant CSS selector */
+            .gallery img {
+                border: 5px solid #daedf7;
+                border-radius: 10%;
+            }
+
+            img {
+                border: 5px solid #ecebd5;
+                border-radius: 20px;
+            }
+
+            audio {
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+                max-width: 600px;
+                border: 3px solid #ccc;
+                border-radius: 11px;
+            }
+         </style>
+    </head>
+
+    <body>
+        <div id="introduction-text">
+            <!-- Inline specification -->
+            <h1 style="color: cadetblue; text-align: center;">PROJECT AT</h1>
+            <p class="normal-text" style="text-align: center">
+                This is a practice site designed to improve HTML and CSS styling.
+                Within this project, you can try out lots of different HTML elements and CSS styles.
+
+                <br>
+
+                It includes various HTML elements such as <b>headings</b>, <b>paragraphs</b>, <b>lists</b> and etc.
+            </p>
+        </div>
+
+        <!-- Placeholder text division -->
+        <div id="placeholder-text">
+            <h2>Placeholder Text</h2>
+            <p class="normal-text">
+                HTML provides a variety of elements to structure and format text. Below is a list of the elements that you can use: <br>
+               <ul>
+                    <li><b>Bold Text</b>: <code>&lt;b&gt; ... &lt;/b&gt;</code></li>
+                    <li><b>Italic Text</b>: <code>&lt;i&gt; ... &lt;/i&gt;</code></li>
+                    <li><b>Underline Text</b>: <code>&lt;ins&gt; ... &lt;/ins&gt;</code></li>
+                    <li><b>Superscript Text</b>: <code>&lt;sup&gt; ... &lt;/sup&gt;</code></li>
+                    <li><b>Subscript Text</b>: <code>&lt;sub&gt; ... &lt;/sub&gt;</code></li>
+                    <li><b>Marked Text</b>: <code>&lt;mark&gt; ... &lt;/mark&gt;</code></li>
+                    <li><b>Strikethrough Text</b>: <code></code>&lt;del&gt; ... &lt;/del&gt;</code></li>
+                    <li><b>Big Text (deprecated)</b>: <code>&lt;big&gt; ... &lt;/big&gt;</code></li>
+                    <li><b>Small Text</b>: <code>&lt;small&gt; ... &lt;/small&gt;</code></li>
+               </ul>
+            </p>
+
+            <p class="normal-text">
+                The text below is often used in design and layout to give an idea of how the final text will look. It is usually 
+                not meaningful and is used to demonstrate the visual appearance of the text. Hence, you can use it to practice HTML 
+                text formatting elements such as bold, italic, underline, superscript, subscript and etc. Feel free to
+                experiment with different styles, colors and sizes and please don't worry about the content.
+            </p>
+
+            <p id="lorem-ipsum">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla 
+                lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel 
+                class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            </p>
+        </div>
+
+
+        <!-- Image and Audio text division -->
+         <div id="image-audio-text">
+            <h2>Image and Audio</h2>
+            <h3>Image</h3>
+            <p class="normal-text">
+                This part will help to get use to image and audio elements in HTML. To imbed an image or a video into a webpage, you can
+                use this following syntax: <br>
+                <ul>
+                    <li>For images: <code>&lt;img src="image.jpg" alt="Description"&gt;</code></li>
+                    <li>For audio: <code>&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;</code></li>
+                </ul>
+            </p>
+
+            <p class="normal-text">
+                Each of these elements has its own attributes, which can be used to customize the appearance and behavior of the media. You can
+                use either inline styling or the style tag to apply CSS styles to these elements. For example, this is an imbedded image that has
+                been centered and has a designated width and height:
+
+                 <img 
+                    src="images/sample3.jpg"
+                    alt="A lake"
+                    style="display: block; margin: auto"
+                    width="600px"
+                    height="400px" 
+                    title="A wooden pier leads into the calm lake night">
+            </p>
+
+            <p class="normal-text">
+                You can also display and layout images using CSS Flexbox, which is a <b>very common layout technique</b>:
+                <div class="gallery-wrapper">
+                    <img src="images/sample1.jpg" alt="Sample Image 1" width="400px" height="300px">
+                    <img src="images/sample2.jpg" alt="Sample Image 2" width="400px" height="300px">
+                    <img src="images/sample3.jpg" alt="Sample Image 3" width="400px" height="300px">
+                    <img src="images/sample4.jpg" alt="Sample Image 4" width="400px" height="300px">
+                    <img src="images/sample5.jpg" alt="Sample Image 5" width="400px" height="300px">
+                </div>
+            </p>
+
+            <h3>Audio</h3>
+            <p class="normal-text">
+                Below is an example of an audio element that plays the song "Giấc Mơ": <br>
+                <audio controls src="audio/giacmo.mp3" title="Giấc Mơ"></audio>
+         </div>
+
+        <!-- Form text division -->
+         <div id="form-text">
+            <h2>Form Elements</h2>
+         </div>
+    </body>
+</html>
