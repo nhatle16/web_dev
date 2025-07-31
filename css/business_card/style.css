@@ -15,7 +15,7 @@ html {
     width: 35em;
     height: 22em;
     margin: 5em auto;
-    background-color: red;
+    background-image: radial-gradient(circle, #ffe5cb, #feffdf, #ffd7d5);
     border: 0.2em solid black;
     border-radius: 1.5em;
 }
@@ -50,7 +50,7 @@ h2, p {
 /* Task 3: Article styling */
 .card article {
     height: 12em;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(178, 177, 177, 0.305);
     box-sizing: border-box;
 }
 
