@@ -1,0 +1,50 @@
+html, body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #2474b1;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image: radial-gradient(circle, #fde9e9, #fdfdda, #fee7f4);
+    border-radius: 2em;
+}
+
+.gallery-item {
+    flex: 1 1 0;
+    width: 30vw;
+    height: 20vh;
+    min-width: 200px;
+    min-height: 135px;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 1.2vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.gallery-item img {
+    flex: 1 1 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    border-radius: 1em;
+}
+
+.gallery-item:hover {
+    box-shadow: 5px 5px 0 2px rgba(0, 0, 0, 0.498);
+    transform: translate(-3%, -3%);     /* move left and up 3% of its width */
+    transition: all 0.7s ease, box-shadow 0.3s ease;
+}
